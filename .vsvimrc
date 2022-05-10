@@ -1,0 +1,39 @@
+set history=10000
+set scrolloff=3
+set number
+set relativenumber
+
+" :autocmd BufWinLeave * :vsc Edit.FormatDocument<CR>
+
+nnoremap <Space>j= :vsc Edit.FormatDocument<CR>
+
+" Jump to somewhere
+nnoremap <C-O> :vsc View.NavigateBackward<CR>
+nnoremap <C-I> :vsc View.NavigateForward<CR>
+
+nnoremap gd :vsc Edit.GoToDefinition<CR>
+nnoremap <Space>gd :vsc Edit.GoToDeclaration<CR>
+nnoremap <Space>en :vsc Edit.GoToNextIssueinFile<CR>
+nnoremap <Space>ep :vsc Edit.GoToPreviousIssueinFile<CR>
+
+nnoremap <Space>/ :vsc Edit.FindinFiles<CR>
+
+" Outline
+" nnoremap zc :vsc Edit.CollapseAllincurrentblock<CR>
+nnoremap zc :vsc Edit.ToggleOutliningExpansion<CR>
+nnoremap zm :vsc Edit.ToggleAllOutlining<CR>
+
+" Refactor
+nnoremap <Space>rr :vsc Refactor.Rename<CR>
+
+" PeasyMotion Plug-in
+nnoremap <Space>jj :vsc Tools.InvokePeasyMotion<CR>
+nnoremap <Space>jl :vsc Tools.InvokePeasyMotionJumpToLineBegining<CR>
+nnoremap <Space>jt :vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>
+
+" ToggleComment Plug-in
+nnoremap <Space>; :vsc Edit.ToggleLineComment<CR>
+vnoremap <Space>; :vsc Edit.ToggleLineComment<CR>:<ESC>
+
+" Translator Plug-in
+vnoremap <Space>tt :vsc Translator.GoogleTranslate<CR>
