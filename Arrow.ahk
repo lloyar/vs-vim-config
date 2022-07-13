@@ -5,3 +5,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ^f::Right
 ^b::Left
+^n::Down
+^p::Up
