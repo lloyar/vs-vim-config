@@ -7,8 +7,16 @@ set hlsearch
 nnoremap <Space>sc :noh<CR>
 
 " :autocmd BufWinLeave * :vsc Edit.FormatDocument<CR>
-
+" Visutal Studio command
+nnoremap <Space>pf :vsc View.SolutionExplorer<CR>
 nnoremap <Space>j= :vsc Edit.FormatDocument<CR>
+
+" Clipboard
+vnoremap x "+x
+vnoremap y "+y
+" map p		"+gP
+" imap <C-V>		<Esc>"+gpa
+" cmap <C-V>		<C-R>+
 
 " Jump to somewhere
 nnoremap <C-O> :vsc View.NavigateBackward<CR>
