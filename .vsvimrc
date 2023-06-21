@@ -9,7 +9,8 @@ nnoremap <Space>sc :noh<CR>
 " :autocmd BufWinLeave * :vsc Edit.FormatDocument<CR>
 " Visutal Studio command
 nnoremap <Space>pf :vsc View.SolutionExplorer<CR>
-nnoremap <Space>j= :vsc Edit.FormatDocument<CR>
+nnoremap <Space>j= :vsc ReSharper.ReSharper_ReformatCode<CR>
+vnoremap = :vsc ReSharper.ReSharper_ReformatCode<CR>gv
 
 " Clipboard
 vnoremap x "+x
@@ -30,6 +31,7 @@ nnoremap <Space>ep :vsc Edit.GoToPreviousIssueinFile<CR>
 nnoremap <Space>/ :vsc Edit.FindinFiles<CR>
 
 " ReSharper Go to
+nnoremap <Space><Space> :vsc ReSharper.ReSharper_GotoAction<CR>
 nnoremap <Space>fa :vsc ReSharper.ReSharper_GotoAction<CR>
 nnoremap <Space>ft :vsc ReSharper.ReSharper_GotoType<CR>
 nnoremap <Space>ff :vsc ReSharper.ReSharper_GotoFile<CR>
